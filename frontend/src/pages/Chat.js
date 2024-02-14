@@ -13,7 +13,7 @@ export const Chat = () => {
   useEffect(() => {
     socket.on("message", (message) => console.log(message));
     socket.on("receive_message", (newMsg) => {
-      setMessages((prevMessages) => [...prevMessages, newMsg]);
+      setMessages([...messages, newMsg]);
     });
     // eslint-disable-next-line
   }, [socket]);
