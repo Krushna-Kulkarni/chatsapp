@@ -9,7 +9,7 @@ export const Chat = () => {
 
   const Navigate = useNavigate();
 
-  const socket = io("http://localhost:5000");
+  const socket = io();
   useEffect(() => {
     socket.on("message", (message) => console.log(message));
     socket.on("receive_message", (newMsg) => {
