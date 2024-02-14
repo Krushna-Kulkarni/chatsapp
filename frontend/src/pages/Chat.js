@@ -31,7 +31,7 @@ export const Chat = () => {
   };
 
   return (
-    <div className="max-w-[1100px] bg-white my-8 mx-auto overflow-hidden">
+    <div className="max-w-[500px] bg-white my-8 mx-auto overflow-hidden">
       <header className="flex items-center justify-between bg-dark-color-a text-white rounded-t-md p-4">
         <div className="text-lg">chatsApp</div>
         <button
